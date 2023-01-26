@@ -10,6 +10,7 @@ It is about leveraging Coq to write a logic reasoning structure, then use GPT3 t
 Now, this guide will help you navigate between the [Reasoner Coq website](https://coq.vercel.app/) and the [OpenAI GPT3 playground](https://beta.openai.com/playground) to complete a student's task of drafting a complex answer using both tools. 
 
 <hr>
+
 ### Stage 1 - Environment Setup
 
 * First, check you have access to the GPT3 playground [OpenAI GPT3 playground](https://beta.openai.com/playground). The screenshot for that page is 
@@ -20,6 +21,7 @@ Now, this guide will help you navigate between the [Reasoner Coq website](https:
 * Then, check you have access to [Reasoner Coq website](https://coq.vercel.app/). The screenshot for that is 
 ![jscoq](images/jscoq.png)
 <hr>
+
 ### Stage 2 - Develop logic structure in the jsCoq scratchpad
 
 * First, create a new scratchpad  [scratchpad link in jsCoq](https://coq.vercel.app/scratchpad.html), which can be launched on clicking the edit button middle top of the page. 
@@ -111,11 +113,14 @@ The above blob defined an inductive data type `tone_analysis`, and a goal that s
 ![proof state 1](images/proof%20state%201.png)
 <hr>
 
+
+### Stage 3 Training
+
 * Now copy paste the proof state contents to GPT3 window
 
 ![proof state](images/copyed%20proof%20state%201%20at%20gpt.png)
 
-   * Please note that, I inserted the comment starting symbol "(**", which is highlighted. Please add this. 
+   * Please note that, I inserted the comment starting symbol "(**", which is highlighted. Please make sure to add this because this will make Coq easier to identify this is a comment. 
 
    * Now append the following code snippet:
 
@@ -137,6 +142,8 @@ their value and commitment. *)
 
 Using one shot learning, GPT can learn how to take the proof state as input and produce the text after `::`. 
 
+
+### Stage 4 Inferencing
 
 * Now come back to the jsCoq. Navigate the cursor to the "anchor 2". 
 <hr>
