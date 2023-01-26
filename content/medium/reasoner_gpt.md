@@ -131,7 +131,11 @@ their value and commitment. *)
 
 ```
 
-* The above text becomes the auto-completion training data. Using one shot learning, GPT can learn how to take the proof state as input and produce the text after `::`. 
+* The above text becomes the auto-completion's training data. Tips: 
+   * *Note, this is training data*, you must type in the content between `::` and `*)` using your own text, otherwise GPT won't know how to generate text that reflects your tone. 
+   * Also, put in as many referrence text as possible, which makes GPT3 easier to extract patterns. For example, I mentioned "when I read about the sentence on "bla bla bla.
+
+Using one shot learning, GPT can learn how to take the proof state as input and produce the text after `::`. 
 
 
 * Now come back to the jsCoq. Navigate the cursor to the "anchor 2". 
