@@ -140,6 +140,10 @@ their value and commitment. *)
    * *Note, this is training data*, you must type in the content between `::` and `*)` using your own text, otherwise GPT won't know how to generate text that reflects your tone. 
    * Also, put in as many referrence text as possible, which makes GPT3 easier to extract patterns. For example, I mentioned "when I read about the sentence on "bla bla bla.
 
+* Here is the final screenshot for training: 
+
+
+
 Using one shot learning, GPT can learn how to take the proof state as input and produce the text after `::`. 
 
 
@@ -186,7 +190,8 @@ tone "inspiration"
 
 ```
 
-* Press send. 
+* Please pay attention to the marker `::`. The generated text would occur afterwards if you press `Send`. The choice of the marker `::` is arbitrary, but it should be consistent to the training example, and it should also avoid the symbols such as `(**` or `*)`, which are confusing the Coq. 
+* Now press send. 
 * What's next is very amazing. GPT3 learnt the first example and then apply the pattern in the auto generated text, like this:
 
 <hr>
